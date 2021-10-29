@@ -2,6 +2,18 @@
 -- Sitio web: https://kodi.tv/
 -- version: 19.3
 
+
+- Descarga
+
+-- Windows
+--- 32bits: https://mirrors.kodi.tv/releases/windows/win32/kodi-19.3-Matrix-x86.exe
+--- 64bits: https://mirrors.kodi.tv/releases/windows/win64/kodi-19.3-Matrix-x64.exe
+
+-- Linux 18.04
+--- sudo add-apt-repository ppa:team-xbmc/ppa -y
+--- sudo apt update
+--- sudo apt install kodi -y
+
 - Addons
 
 -- Pluto TV
