@@ -1,6 +1,8 @@
-# Kodi
+﻿# Kodi
 ## Sitio web: https://kodi.tv/
 ## version: 19.3
+
+
 
 
 # Descargar
@@ -13,6 +15,9 @@
 ### sudo add#apt#repository ppa:team#xbmc/ppa #y
 ### sudo apt update
 ### sudo apt install kodi #y
+
+
+
 
 # Addons
 
@@ -33,13 +38,10 @@
 
 
 
-
-
-
-
 # Añadir Retroarch al Menu Principal de Kodi
 
-# Archivo a Modificar ~/.kodi/addons/skin.estuary/xml/Home.xml
+# Windows: Ubicacion del Archivo a Modificar C:\Program Files\Kodi\addons\skin.estuary\xml\Home.xml
+# Linux: Ubicacion del Archivo a Modificar ~/.kodi/addons/skin.estuary/xml/Home.xml
 
 # Reemplazar
 #<item>
@@ -72,11 +74,7 @@
 
 
 
-# Comando en Linux para cerrar Kodi y abrir Retroarch
-# <onclick>System.Exec(...\switch-to-retroarch.sh)</onclick>
-# Contenido del switch-to-retroarch.sh
-# #! /bin/bash; pkill kodi; retroarch
-
+# Comandos
 
 # Comando en Windows para cerrar Kodi y abrir Retroarch
 # <onclick>System.Exec(...\switch-to-retroarch.bat)</onclick>
@@ -85,3 +83,8 @@
 # taskkill /F /IM kodi.exe
 # retroarch
 # exit
+
+# Comando en Linux para cerrar Kodi y abrir Retroarch
+# <onclick>System.Exec(...\switch-to-retroarch.sh)</onclick>
+# Contenido del switch-to-retroarch.sh
+# #! /bin/bash; pkill kodi; retroarch
