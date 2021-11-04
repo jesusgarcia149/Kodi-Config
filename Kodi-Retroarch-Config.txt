@@ -1,0 +1,128 @@
+﻿# Kodi
+## Sitio web: https://kodi.tv/
+## version: 19.3
+
+
+
+
+# Descargar
+
+## Windows
+### 32bits: https://mirrors.kodi.tv/releases/windows/win32/kodi#19.3#Matrix#x86.exe
+### 64bits: https://mirrors.kodi.tv/releases/windows/win64/kodi#19.3#Matrix#x64.exe
+
+## Linux 18.04
+### sudo add#apt#repository ppa:team#xbmc/ppa #y
+### sudo apt update
+### sudo apt install kodi #y
+
+
+
+
+# Addons
+
+## Pluto TV
+### Repositorio: Repositorios Oficiales
+#### instalacion: addons de videos > Pluto TV
+
+## Konectas > Balandro
+### Repositorio: http://konectas.es/repo/
+#### instalacion: %Nombre_de_la_fuente% > ADDONS CON REPOSITORIO > BALANDRO > repository.balandro#1.0.3.zip
+
+## Youtube (Sin API)
+## Addond Cristal Azul
+## url: https://mundokodi.com/addon#cristal#azul#en#kodi/
+### Repositorio: https://fuentekodileia.github.io/
+##### instalacion: %Nombre_de_la_fuente% > addons#todo#en#uno > plugin.video.cristalazul#x.x.x.zip
+
+
+
+
+# Añadir Retroarch al Menu Principal de Kodi
+
+# Windows: Ubicacion del Archivo a Modificar C:\Program Files\Kodi\addons\skin.estuary\xml\Home.xml
+# Linux: Ubicacion del Archivo a Modificar ~/.kodi/addons/skin.estuary/xml/Home.xml
+
+# Reemplazar
+#<item>
+#    <label>$LOCALIZE[342]</label>
+#    <onclick condition="Library.HasContent(movies) + Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://movies/,return)</onclick>
+#    <onclick condition="Library.HasContent(movies) + !Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+#    <onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
+#    <property name="menu_id">$NUMBER[5000]</property>
+#    <thumb>icons/sidemenu/movies.png</thumb>
+#    <property name="id">movies</property>
+#    <visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+#</item>
+
+# Por
+#<item>
+#    <label>Retroarch</label>
+#    <onclick>System.Exec(...\switch-to-retroarch.bat)</onclick>
+#</item>
+#<item>
+#    <label>$LOCALIZE[342]</label>
+#    <onclick condition="Library.HasContent(movies) + Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://movies/,return)</onclick>
+#    <onclick condition="Library.HasContent(movies) + !Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+#    <onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
+#    <property name="menu_id">$NUMBER[5000]</property>
+#    <thumb>icons/sidemenu/movies.png</thumb>
+#    <property name="id">movies</property>
+#    <visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+#</item>
+
+
+
+
+# Comandos
+
+# Comando en Windows para cerrar Kodi y abrir Retroarch
+# <onclick>System.Exec(...\switch-to-retroarch.bat)</onclick>
+# Contenido del switch-to-retroarch.bat
+# @echo off
+# taskkill /F /IM kodi.exe
+# retroarch
+# exit
+
+# Comando en Linux para cerrar Kodi y abrir Retroarch
+# <onclick>System.Exec(...\switch-to-retroarch.sh)</onclick>
+# Contenido del switch-to-retroarch.sh
+# #! /bin/bash; pkill kodi; retroarch
+
+
+
+
+
+
+
+
+# Retroarch
+## Sitio web: https://www.retroarch.com/
+## version: v1.9.12
+
+
+
+
+# Descargar
+
+## Windows
+### 32bits: https://buildbot.libretro.com/stable/1.9.12/windows/x86/RetroArch-Win32-setup.exe
+### 64bits: https://buildbot.libretro.com/stable/1.9.12/windows/x86_64/RetroArch-Win64-setup.exe
+
+## Linux 18.04
+### sudo add-apt-repository ppa:libretro/stable -y
+### sudo apt-get update
+### sudo apt install retroarch -y
+
+
+
+
+## Quitar metodos para salir de retroarch
+
+# Windows: Ubicacion del Archivo a Modificar C:\RetroArch-Win64\retroarch.cfg
+# Linux: Ubicacion del Archivo a Modificar 
+
+### boton de salir (desabilitar)
+# menu_show_quit_retroarch = "false"
+### Tecla paara salir (desabilitar)
+input_exit_emulator = "nul"
