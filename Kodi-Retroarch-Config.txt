@@ -8,13 +8,13 @@
 # Descargar
 
 ## Windows
-### 32bits: https://mirrors.kodi.tv/releases/windows/win32/kodi#19.3#Matrix#x86.exe
-### 64bits: https://mirrors.kodi.tv/releases/windows/win64/kodi#19.3#Matrix#x64.exe
+### 32bits: https://mirrors.kodi.tv/releases/windows/win32/kodi#19.3-Matrix-x86.exe
+### 64bits: https://mirrors.kodi.tv/releases/windows/win64/kodi#19.3-Matrix-x64.exe
 
 ## Linux 18.04
-### sudo add#apt#repository ppa:team#xbmc/ppa #y
+### sudo add-apt-repository ppa:team-xbmc/ppa -y
 ### sudo apt update
-### sudo apt install kodi #y
+### sudo apt install kodi -y
 
 
 
@@ -27,13 +27,13 @@
 
 ## Konectas > Balandro
 ### Repositorio: http://konectas.es/repo/
-#### instalacion: %Nombre_de_la_fuente% > ADDONS CON REPOSITORIO > BALANDRO > repository.balandro#1.0.3.zip
+#### instalacion: %Nombre_de_la_fuente% > ADDONS CON REPOSITORIO > BALANDRO > repository.balandro-1.0.3.zip
 
 ## Youtube (Sin API)
 ## Addond Cristal Azul
-## url: https://mundokodi.com/addon#cristal#azul#en#kodi/
+## url: https://mundokodi.com/addon-cristal#azul#en-kodi/
 ### Repositorio: https://fuentekodileia.github.io/
-##### instalacion: %Nombre_de_la_fuente% > addons#todo#en#uno > plugin.video.cristalazul#x.x.x.zip
+##### instalacion: %Nombre_de_la_fuente% > addons-todo-en-uno > plugin.video.cristalazul-x.x.x.zip
 
 
 
@@ -120,7 +120,7 @@
 ## Quitar metodos para salir de retroarch
 
 # Windows: Ubicacion del Archivo a Modificar C:\RetroArch-Win64\retroarch.cfg
-# Linux: Ubicacion del Archivo a Modificar 
+# Linux: Ubicacion del Archivo a Modificar ~/.config/retroarch/retroarch.cfg
 
 ### boton de salir (desabilitar)
 # menu_show_quit_retroarch = "false"
