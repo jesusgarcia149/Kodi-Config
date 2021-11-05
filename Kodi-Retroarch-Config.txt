@@ -125,4 +125,4 @@
 ### boton de salir (desabilitar)
 # menu_show_quit_retroarch = "false"
 ### Tecla paara salir (desabilitar)
-input_exit_emulator = "nul"
+# input_exit_emulator = "nul"
