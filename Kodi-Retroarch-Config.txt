@@ -41,7 +41,7 @@
 # Añadir Retroarch al Menu Principal de Kodi
 
 # Windows: Ubicacion del Archivo a Modificar C:\Program Files\Kodi\addons\skin.estuary\xml\Home.xml
-# Linux: Ubicacion del Archivo a Modificar ~/.kodi/addons/skin.estuary/xml/Home.xml
+# Linux: Ubicacion del Archivo a Modificar /usr/share/kodi/addons/skin.estuary/xml/Home.xml
 
 # Reemplazar
 #<item>
